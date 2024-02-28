@@ -1,0 +1,272 @@
+/* Add this CSS to your style.css file */
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+
+a:link,
+a:visited {
+    color: #202124;
+    text-decoration: none;
+}
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar-left {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.topbar h4 {
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.search-lb {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.search-lb .search-lab-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 5px);
+    /* Position the text below the image */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.search-lab:hover .search-lb-text {
+    visibility: visible;
+    opacity: 1;
+    background-color: grey;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 5px);
+    /* Position the tooltip below the image */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    background-color: grey;
+}
+
+
+
+/* Position the list below the tooltip */
+.tooltip .list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Position the list below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    /* Adjust background color as needed */
+    border: 1px solid #ccc;
+    /* Adjust border color as needed */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Show the list when tooltip is hovered */
+.tooltip:hover .list {
+    display: block;
+}
+
+/* Style for the Google product logos grid */
+.list img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+
+
+
+.profile-picture {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-top: -5px;
+}
+
+.account-info {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.account-circle:hover .account-info {
+    opacity: 1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+}
+
+.search-bar {
+    justify-content: space-between;
+    margin-top: -100px;
+    width: 700px;
+    padding: 20px;
+    margin-left: 400px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #333;
+}
+
+
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-01 {
+    text-align: left;
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 1px;
+}
+
+.footer-02 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: normal;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.left h4 {
+    font-weight: normal;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.right h4 {
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+
+
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-right>* {
+    margin-right: 30px;
+}
+
+.topbar-right>*:last-child {
+    margin-right: 5;
+}
