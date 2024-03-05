@@ -1,0 +1,63 @@
+body {
+    background-color: #000f0f;
+}
+
+.weather-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: linear-gradient(#1e9309, #000000);
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: 500px;
+    margin: 0 auto; 
+    color: aliceblue;
+}
+
+.weather-container h2 {
+    margin-bottom: 20px; 
+}
+
+#city-form {
+    margin-bottom: 20px; 
+}
+
+#city-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    margin-right: 10px; /* Space between input and button */
+}
+
+#city-input:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: dodgerblue; /* Highlight border color on focus */
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007acc; /* Darker color on hover */
+}
+
+
+.main-info, .weather-info, .wind-info, .icon {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
